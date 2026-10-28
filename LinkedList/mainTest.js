@@ -4,6 +4,7 @@ function assert(label, actual, expected){
     const pass = JSON.stringify(actual) === JSON.stringify(expected);
     console.log(`${pass ? "PASS" : "FAIL"} - ${label}: got ${JSON.stringify(actual)}, expected ${JSON.stringify(expected)} `);
 
+}
     console.log("1: BAsic test for assignment....");
 
     const list = new LinkedList();
@@ -132,4 +133,3 @@ assert("contains null", mixed.contains(null), true);
 assert("contains 0", mixed.contains(0), true);
 assert("size mixed", mixed.size(), 5);
 
-}
